@@ -74,18 +74,17 @@ dependencies {
     implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version")
     // LiveData
     implementation("androidx.lifecycle:lifecycle-livedata-ktx:$lifecycle_version")
-       //RecyclarView
+    //RecyclarView
     implementation "androidx.recyclerview:recyclerview:1.2.1"
     // RecyclerView Animator
-    implementation 'jp.wasabeef:recyclerview-animators:3.0.0'
-
+    implementation 'jp.wasabeef:recyclerview-animators:4.0.2'
 
 
     //material Components
     implementation 'com.google.android.material:material:1.7.0-alpha02'
     //color picker library
     implementation 'com.thebluealliance:spectrum:0.7.1'
-    implementation 'com.yahiaangelo.markdownedittext:markdownedittext:1.1.1'
+    implementation 'io.github.yahiaangelo.markdownedittext:markdownedittext:1.1.3'
     implementation "io.noties.markwon:core:4.6.0"
     implementation "io.noties.markwon:ext-strikethrough:4.6.0"
     implementation "io.noties.markwon:ext-tasklist:4.6.0"
