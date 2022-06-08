@@ -1,4 +1,4 @@
-package com.practice.yournote.Fragments
+package com.practice.yournote.fragments
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -14,10 +14,10 @@ private const val ARG_PARAM2 = "param2"
 
 /**
  * A simple [Fragment] subclass.
- * Use the [note_fragment.newInstance] factory method to
+ * Use the [save_or_delete_fragment.newInstance] factory method to
  * create an instance of this fragment.
  */
-class note_fragment : Fragment() {
+class save_or_delete_fragment : Fragment() {
     // TODO: Rename and change types of parameters
     private var param1: String? = null
     private var param2: String? = null
@@ -35,7 +35,7 @@ class note_fragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_note_fragment, container, false)
+        return inflater.inflate(R.layout.fragment_save_or_delete_fragment, container, false)
     }
 
     companion object {
@@ -45,12 +45,12 @@ class note_fragment : Fragment() {
          *
          * @param param1 Parameter 1.
          * @param param2 Parameter 2.
-         * @return A new instance of fragment note_fragment.
+         * @return A new instance of fragment save_or_delete_fragment.
          */
         // TODO: Rename and change types and number of parameters
         @JvmStatic
         fun newInstance(param1: String, param2: String) =
-            note_fragment().apply {
+            save_or_delete_fragment().apply {
                 arguments = Bundle().apply {
                     putString(ARG_PARAM1, param1)
                     putString(ARG_PARAM2, param2)

@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/save_delete_id_master"
-    tools:context=".Fragments.save_or_delete_fragment">
+    tools:context=".fragments.save_or_delete_fragment">
     <RelativeLayout
         android:layout_width="match_parent"
         android:id="@+id/toolar_save_delete"

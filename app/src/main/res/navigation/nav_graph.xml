@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/note_fragment"
-        android:name="com.practice.yournote.Fragments.note_fragment"
+        android:name="com.practice.yournote.fragments.note_fragment"
         android:label="fragment_note_fragment"
         tools:layout="@layout/fragment_note_fragment" >
         <action
@@ -20,7 +20,7 @@
     </fragment>
     <fragment
         android:id="@+id/save_or_delete_fragment"
-        android:name="com.practice.yournote.Fragments.save_or_delete_fragment"
+        android:name="com.practice.yournote.fragments.save_or_delete_fragment"
         android:label="fragment_save_or_delete_fragment"
         tools:layout="@layout/fragment_save_or_delete_fragment" >
         <action
