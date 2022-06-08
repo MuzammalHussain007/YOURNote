@@ -80,6 +80,7 @@
         android:layout_height="match_parent"
         android:clipToPadding="false"
         android:paddingStart="6dp"
+        tools:listitem="@layout/custom_layout_recyclar"
         android:paddingBottom="5dp"
         android:transitionGroup="true"
         app:layout_behavior="@string/appbar_scrolling_view_behavior" />

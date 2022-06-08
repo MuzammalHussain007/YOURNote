@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/note_item_pallet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        android:padding="7dp"
+        app:cardCornerRadius="13dp"
+        app:cardElevation="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/noteTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4sp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="4sp"
+                android:ellipsize="end"
+                android:fontFamily="@font/google_sans_medium"
+                android:padding="5dp"
+                android:text="@string/this_is_title"
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/noteContentitem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/noteTitle"
+                android:layout_marginStart="4sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="4sp"
+                android:layout_marginBottom="3dp"
+                android:ellipsize="end"
+                android:fontFamily="@font/google_sans_medium"
+                android:maxLines="12"
+                android:padding="5dp"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                tool:text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
+molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
+numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
+optio, eaque rerum! Provident similique accusantium nemo autem. Veritatis
+obcaecati tenetur iure eius earum ut molestias architecto voluptate aliquam
+nihil, eveniet aliquid culpa officia aut! Impedit sit" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/noteDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/noteContentitem"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="4sp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="4sp"
+                android:drawableStart="@drawable/ic_outline_calendar_today_24"
+                android:drawablePadding="5dp"
+                android:ellipsize="end"
+                android:fontFamily="@font/google_sans_regular"
+                android:padding="5dp"
+                android:text="@string/dd_mm_yyyy"
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                app:drawableTint="@color/black" />
+
+
+        </RelativeLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+</RelativeLayout>

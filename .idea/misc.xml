@@ -4,7 +4,11 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/FlutterWork/YOURNote/app/src/main/res/drawable/ic_round_add_24.xml" value="0.1495" />
-        <entry key="..\:/FlutterWork/YOURNote/app/src/main/res/layout/fragment_note_fragment.xml" value="0.33" />
+        <entry key="..\:/FlutterWork/YOURNote/app/src/main/res/layout/activity_main.xml" value="0.17760416666666667" />
+        <entry key="..\:/FlutterWork/YOURNote/app/src/main/res/layout/bottom_sheet_card_layout.xml" value="0.22" />
+        <entry key="..\:/FlutterWork/YOURNote/app/src/main/res/layout/custom_layout_recyclar.xml" value="0.33" />
+        <entry key="..\:/FlutterWork/YOURNote/app/src/main/res/layout/fragment_note_fragment.xml" value="0.25" />
+        <entry key="..\:/FlutterWork/YOURNote/app/src/main/res/layout/fragment_save_or_delete_fragment.xml" value="0.33" />
       </map>
     </option>
   </component>

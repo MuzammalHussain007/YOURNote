@@ -1,6 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/nav_graph">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/note_fragment">
 
+    <fragment
+        android:id="@+id/note_fragment"
+        android:name="com.practice.yournote.Fragments.note_fragment"
+        android:label="fragment_note_fragment"
+        tools:layout="@layout/fragment_note_fragment" >
+        <action
+            android:id="@+id/action_note_fragment_to_save_or_delete_fragment"
+            app:destination="@id/save_or_delete_fragment"
+            app:enterAnim="@anim/slide_in_left"
+            app:exitAnim="@anim/slide_in_top"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/save_or_delete_fragment"
+        android:name="com.practice.yournote.Fragments.save_or_delete_fragment"
+        android:label="fragment_save_or_delete_fragment"
+        tools:layout="@layout/fragment_save_or_delete_fragment" >
+        <action
+            android:id="@+id/action_save_or_delete_fragment_to_note_fragment"
+            app:destination="@id/note_fragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_in_left"
+            app:popEnterAnim="@anim/slide_in_bottom"
+            app:popExitAnim="@anim/slide_out_top" />
+    </fragment>
 </navigation>
