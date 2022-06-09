@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/note_fragment"
-        android:name="com.practice.yournote.fragments.note_fragment"
+        android:name="com.practice.yournote.fragments.Note_fragment"
         android:label="fragment_note_fragment"
         tools:layout="@layout/fragment_note_fragment" >
         <action
@@ -20,7 +20,7 @@
     </fragment>
     <fragment
         android:id="@+id/save_or_delete_fragment"
-        android:name="com.practice.yournote.fragments.save_or_delete_fragment"
+        android:name="com.practice.yournote.fragments.Save_or_delete_fragment"
         android:label="fragment_save_or_delete_fragment"
         tools:layout="@layout/fragment_save_or_delete_fragment" >
         <action
@@ -30,5 +30,9 @@
             app:exitAnim="@anim/slide_in_left"
             app:popEnterAnim="@anim/slide_in_bottom"
             app:popExitAnim="@anim/slide_out_top" />
+        <argument android:name="note"
+            android:defaultValue="@null"
+            app:nullable="true"
+            app:argType="com.practice.yournote.modal.Note"/>
     </fragment>
 </navigation>
